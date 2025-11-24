@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — projects and contact." />
+  <style>
+    :root{--accent:#2563eb;--muted:#6b7280;--bg:#fff;--card:#f8fafc}
+    *{box-sizing:border-box}body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#071329}
+    .wrap{max-width:900px;margin:40px auto;padding:0 20px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .hero{display:grid;grid-template-columns:1fr 300px;gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:16px;border-radius:10px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+    .proj img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:820px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1 id="name">Your Name</h1>
+        <div class="subtitle" id="role">Your role / short tagline</div>
+      </div>
+      <nav><a href="#projects">Work</a> · <a href="#contact">Contact</a></nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h2 id="headline">Hello — I build useful things.</h2>
+          <p class="subtitle" id="about">Short 1–2 sentence bio about what you do and tools you use.</p>
+          <p style="margin-top:12px"><a class="btn" href="#projects">View work</a></p>
+        </div>
+
+        <section id="projects">
+          <h3 style="margin-top:16px">Selected projects</h3>
+          <div class="projects">
+            <article class="card proj">
+              <img src="https://via.placeholder.com/640x360.png?text=Project+1" alt="Project 1">
+              <h4>Project 1</h4>
+              <p class="subtitle">Two-line description of project, tech used, your role.</p>
+              <p style="font-size:13px;color:var(--muted)"><a href="#" target="_blank">Repo / Demo</a></p>
+            </article>
+
+            <article class="card proj">
+              <img src="https://via.placeholder.com/640x360.png?text=Project+2" alt="Project 2">
+              <h4>Project 2</h4>
+              <p class="subtitle">Short description, tech, outcome.</p>
+              <p style="font-size:13px;color:var(--muted)"><a href="#" target="_blank">Repo / Demo</a></p>
+            </article>
+
+            <!-- Add more cards the same way -->
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h4 id="aboutTitle">About</h4>
+          <p class="subtitle" id="aboutShort">Quick summary: who you are and what you're looking for.</p>
+          <p><strong>Skills:</strong><br>List 6–10 keywords separated by commas</p>
+          <p style="margin-top:12px"><a class="btn" href="#contact">Contact</a></p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:12px;padding:14px">
+      <h3>Contact</h3>
+      <p>Email: <a id="email" href="mailto:you@example.com">you@example.com</a></p>
+      <p>LinkedIn / GitHub: add links here</p>
+    </section>
+
+    <footer>© <span id="year"></span> Your Name — Built with HTML</footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
