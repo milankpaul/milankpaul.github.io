@@ -76,7 +76,7 @@
 
     <section id="contact" class="card" style="padding:20px;margin-top:12px">
       <h3>Contact</h3>
-      <p>Email: <a href="mailto:milan.paul@example.com">milan.paul@example.com</a></p>
+      <p>Email: <a href="mailto:milan.paul@gmail.com">milan.paul@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/yourhandle">yourhandle</a> · LinkedIn: <a href="https://linkedin.com/in/yourprofile">in/yourprofile</a></p>
       <p style="font-size:13px;color:var(--muted)">Tip: replace placeholder links and images with real ones. Host images in `/images/` folder and optimize for web.</p>
     </section>
